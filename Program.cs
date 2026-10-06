@@ -47,6 +47,7 @@ public class Program
         Console.WriteLine("Fazenda dos Animais");
         Console.WriteLine("===================");
         Console.WriteLine("1 - Cachorro");
+        Console.WriteLine("2 - Gato");
         Console.WriteLine("0 - Sair");
         Console.Write("\nEscolha uma opção: ");
     }
@@ -57,6 +58,8 @@ public class Program
         {
             case "1":
                 return new Cachorro();
+            case "2":
+                return new Gato();
             default:
                 return null;
         }
